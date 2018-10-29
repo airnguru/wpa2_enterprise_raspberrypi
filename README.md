@@ -92,6 +92,12 @@ Save the file and then restart the FreeRADIUS server:
 sudo systemctl restart freeradius
 ```
 
+Enable the FreeRADIUS service so it starts automatically between reboots:
+
+```shell
+sudo systemctl enable freeradius
+```
+
 ### AP connection setup
 
 First thing you need to know is that the Pi machine has to have a fixed IP

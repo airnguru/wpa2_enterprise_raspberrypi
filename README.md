@@ -109,3 +109,9 @@ authentication method:
 * Shared Secret: The shared secret you created for the RADIUS client.
 
 Enter this information and restart your AP.
+
+### Client configuration
+
+Users registered in the `/etc/freeradius/3.0/users` file should be able to
+connect. They may encounter the self-signed certificate issue, in which case,
+they should accept.

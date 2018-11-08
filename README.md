@@ -11,7 +11,7 @@ Revision 2).
 ### Packages
 
 On your Raspberry Pi machine (Pi), preferably one that has a fresh Raspbian
-installation, install FreeRADIUS:
+installation, install FreeRADIUS and the Uncomplicated Firewall (UFW):
 
 ```shell
 sudo apt-get update
@@ -58,7 +58,7 @@ sudo systemctl restart freeradius
 
 FreeRADIUS allows for various user authentication methods:
 
-* `Cleartext-Password`: This is by far the worst. Never use this.
+* `Cleartext-Password`: This is by far the worst. __Never use this__.
 * Hash-based schemes like `MD5-Password`, `SHA1-Password`, `SHA2-Password`,
 etc., are not as secure as they claim. Even the longest hash algorithms are
 vulnerable to [rainbow table](https://en.wikipedia.org/wiki/Rainbow_table)
